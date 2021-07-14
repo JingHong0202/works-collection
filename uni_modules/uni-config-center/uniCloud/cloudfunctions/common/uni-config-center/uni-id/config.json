@@ -1,0 +1,21 @@
+{
+	"passwordSecret": "xuyuxin",
+	"tokenSecret": "xuyuxin",
+	"tokenExpiresIn": 7200,
+	"tokenExpiresThreshold": 86400,
+	"bindTokenToDevice": false,
+	"passwordErrorLimit": 6,
+	"passwordErrorRetryTime": 604800,
+	"autoSetInviteCode": false,
+	"forceInviteCode": false,
+	"removePermissionAndRoleFromToken": false,
+	"mp-weixin": {
+		"tokenExpiresIn": 259200,
+		"oauth": {
+			"weixin": {
+				"appid": "wx5483031d84029979",
+				"appsecret": "4a0875eb6e23f2403fd7bf7c95c16d25"
+			}
+		}
+	}
+}

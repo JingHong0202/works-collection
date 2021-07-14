@@ -1,0 +1,107 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		}, 
+		// #ifndef MP-WEIXIN
+		{
+			"path": "pages/upload/upload",
+			"style": {
+				"navigationBarTitleText": "发布作品",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#333333",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#333333",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#333333",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/login/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#333333",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/edit/edit",
+			"style": {
+				"navigationBarTitleText": "编辑",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#333333",
+				"navigationBarTextStyle": "white"
+			}
+		},
+	    {
+            "path" : "pages/preview-video/preview-video",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "视频预览",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#333333",
+                "navigationBarTextStyle": "white"
+            }
+            
+        },
+		// #endif
+		{
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#333333",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/preview/preview",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/rank-detail/rank-detail",
+			"style": {
+				"navigationBarTitleText": "用户榜单",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#333333",
+				"navigationBarTextStyle": "white"
+			}
+		}
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+               "navigationStyle": "custom",
+               "enablePullDownRefresh": false,
+			   "app-plus": {
+				   "animationType":"none"
+			   }
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

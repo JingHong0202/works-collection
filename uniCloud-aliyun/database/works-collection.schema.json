@@ -1,0 +1,56 @@
+{
+	"bsonType": "object",
+	"required": ["user_id", "works"],
+	"permission": {
+		"read": "doc.status==1 || doc._user_id == auth.uid",
+		"create": true,
+		"update": "doc.user_id == auth.uid && doc.status != 1",
+		"delete": "doc.user_id == auth.uid"
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"user_id": {
+			"description": "所属用户ID",
+			"bsonType": "string",
+			"foreignKey": "uni-id-users._id"
+		},
+		"works": {
+			"bsonType": "file",
+			"title": "作品",
+			"description": "作品封面",
+			"fileMediaType": "all"
+		},
+		// "works_video": {
+		// 	"bsonType": "file",
+		// 	"title": "视频作品",
+		// 	"description": "作品内容",
+		// 	"fileMediaType": "video"
+		// },
+		"desc": {
+			"description": "作品描述",
+			"bsonType": "string",
+			"title": "描述"
+		},
+		"star": {
+			"description":"点赞量",
+			"bsonType":"int",
+			"defaultValue":0
+		},
+		"link": {
+			"title": "作品链接",
+			"description":"必须带上http://,无则留空",
+			"bsonType":"string"
+		},
+		"status": {
+			"title": "作品审核状态",
+			"description":"0 未审核，1 通过，-1未通过",
+			"enum": [0,1,-1],
+			"defaultValue": 0,
+			"permission": {
+				"write" : false
+			}
+		}
+	}
+}
